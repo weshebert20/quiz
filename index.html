@@ -4,50 +4,38 @@
 	<meta charset="UTF-8">
 	<title>Music-Quiz</title>
 	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 	<div align="center"><img src="image/tapes.png" class="bg"></div>
 	<div id="main">
 		<img src="image/headphone.png" class="headphone">
 		<div id="container">
-				<div id="question-section">
-						<h2 class="question">What year did Arcade Fire release their first album?</h2>
-						<!--<h2>What famous TV characters were featured in the Dance Yrself Clean music video?</h2>
-						<h2>How old was Lorde when she first released music on Soundcloud?</h2>
-						<h2>What was the name of Chvrches first album?</h2>-->
-				</div>
-				<br>
-				<div class="answers" id="2003">
-					<h3>2003</h3>
-				</div>
-				<div class="answers" id="2004">
-					<h3>2004</h3>
-				</div>
-				<div class="answers" id="2005">
-					<h3>2005</h3>
-				</div>
-				<div class="answers" id="2006">
-					<h3>2006</h3>
-				</div>
-				<br>
-				<div>
-					<button id="next">Next</button>
-				</div>
-					<br>
-					<div>
-						<div class="progress">
-						<h4>1</h4>
-					</div>
-						<div class="progress">
-						<h4>2</h4>
-					</div>
-						<div class="progress">
-						<h4>3</h4>
-					</div>
-						<div class="progress">
-						<h4>5</h4>
-					</div>
+				<div id="questions">
+						<h2 id="question" id="firstquestion">What year did Arcade Fire release their first album?</h2>
+						</div>
+						<br>
+						<div id="answers">
+						<input type="radio" name="option" class="option" value="0">
+						<span class="answer-0">2002</span><br>
+						<input type="radio" name="option" class="option" value="1">
+						<span class="answer-1">2003</span><br>
+						<input type="radio" name="option" class="option" value="2">
+						<span class="answer-2">2004</span><br>
+						<input type="radio" name="option" class="option" value="3">
+						<span class="answer-3">2005</span><br>
+						</div>
+						<br>
+						<div>
+							<button id="submit">Next</button>
+							<button id="try">Try Again</button>
+						</div>
+						<br>
+						<div id="progress">
+							<h2><span id="count">1</span>/5</h2>
+						</div>				
 				</div>
 		</div>
 </body>
+<script src="app.js"></script>
 </html>

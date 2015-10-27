@@ -36,22 +36,23 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	-o-box-shadow: inset 0px -2px 77px -29px #A39B9B,5px 5px 60px 1px #1A1919;
 }
 #container {
-  	position: fixed;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 	border-radius: 24px;
 	padding: 5rem;
 	padding-right: 7rem;
 	padding-left: 7rem;
 	background-color: white;
 	border: 2px;
+  margin-top: 5rem;
 	box-shadow: inset 0px -2px 77px -7px #A39B9B,5px 5px 35px 1px #1A1919;
 	-webkit-box-shadow: inset 0px -2px 77px -7px #A39B9B,5px 5px 35px 1px #1A1919;
 	-moz-box-shadow: inset 0px -2px 77px -7px #A39B9B,5px 5px 35px 1px #1A1919;
 	-o-box-shadow: inset 0px -2px 77px -7px #A39B9B,5px 5px 35px 1px #1A1919;
 }
-#question-section {
+#questions {
 	border-radius: 24px;
 	-webkit-box-shadow: inset 2px -1px 110px -9px rgba(3,2,3,1);
 	-moz-box-shadow: inset 2px -1px 110px -9px rgba(3,2,3,1);
@@ -61,7 +62,7 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin-bottom: -1rem;
 	margin-top: -4rem;
 }
-.question {
+#question {
 	color: white;
 }
 button {
@@ -90,13 +91,8 @@ button:hover {
   background-image: linear-gradient(to bottom, #eafa08, #f2e018);
   text-decoration: none;
 }
-.answers {
-  background: #aedb90;
-  background-image: -webkit-linear-gradient(top, #aedb90, #83b362);
-  background-image: -moz-linear-gradient(top, #aedb90, #83b362);
-  background-image: -ms-linear-gradient(top, #aedb90, #83b362);
-  background-image: -o-linear-gradient(top, #aedb90, #83b362);
-  background-image: linear-gradient(to bottom, #aedb90, #83b362);
+#answers {
+  background: #8B8B83;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -108,12 +104,12 @@ button:hover {
   margin-top: 2rem;
 }
 
-.answers:hover {
+#answers:hover {
   background: #5dc271;
   text-decoration: none;
 }
 
-.progress {
+#progress {
   background: #d9aa34;
   background-image: -webkit-linear-gradient(top, #d9aa34, #dec028);
   background-image: -moz-linear-gradient(top, #d9aa34, #dec028);
@@ -131,6 +127,57 @@ button:hover {
   margin-top: 2rem;
 }
 
-.progress:hover {
+#progress:hover {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+    #container {
+        font-size: 10px;
+        padding: 5px;
+        margin: 0;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem
+    }
+    #answers {
+      font-size: 10px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+    #progress {
+      font-size: 8px;
+    }
+    #submit {
+      font-size: 8px;
+    }
+    .headphone {
+      display: none;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+  #container {
+    font-size: 14px;
+    margin: 0;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem
+  }
+  #answers {
+      font-size: 14px;
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  #progress {
+      font-size: 12px;
+    }
+    #submit {
+      font-size: 12px;
+    }
+    .headphone {
+      display: none;
+    }
+
 }
